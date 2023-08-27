@@ -27,10 +27,27 @@ In this phase, the project plan was rolled out and some essential documents were
 3. Strategy Document
    
    - Based on the project requirements document, the strategy for building the BI tool or the ultimate dashboard design was imagined.
-   - The Dashboard functionality was defined i.e. what all features that the dashboard must contain or would be "nice-to-have".
+   - The Dashboard functionality was defined i.e. what features the dashboard must contain or would be nice to have.
    - All the charts that would be included in the visualization were documented, along with dimensions and measures and how they address stakeholder needs.   
 
 ### Phase-2 : Data Preparation 
+
+For this phase, raw data was provided as three CSV files that represented three market types. There are two approaches with which the data could have been prepared: 
+
+1. Merging the files using SQL in BigQuery
+   
+   - Create a Dataset in the BiQuery console.
+   - Add Table -> upload the file for market-1 as data table.
+   - Create two data tables for market-2 and market-3.
+   - Merge the three data tables using SELECT and UNION SQL query with the necessary columns [NOTE: Avoid using "SELECT * FROM" as it adds more latency and may require additional optimization]
+   - Save the merged table as a CSV file or upload it into Tableau  
+   
+2. Merging the files using UNION in Tableau
+   - Upload the three CSV files into Tableau Public (or Tableau Desktop).
+   - The three files will be uploaded as three data tables in the Data Source section of Tableau.  
+   - Verify and Validate that columns are consistent with each other, check for column names, data types, and the cardinality (for a successful UNION cardinality of all three tables should be same)
+   - Drag and drop one table over another and merge them.    
+   
 
 ### Phase-3 : Dashboard Design 
 
