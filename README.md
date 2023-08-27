@@ -45,10 +45,19 @@ For this phase, raw data was provided as three CSV files that represented three 
 2. Merging the files using UNION in Tableau
    - Upload the three CSV files into Tableau Public (or Tableau Desktop).
    - The three files will be uploaded as three data tables in the Data Source section of Tableau.  
-   - Verify and Validate that columns are consistent with each other, check for column names, data types, and the cardinality (for a successful UNION cardinality of all three tables should be same)
+   - Verify and Validate that columns are consistent with each other, check for column names, data types, and the cardinality (for a successful UNION cardinality of all three tables should be the same)
    - Drag and drop one table over another and merge them.    
-   
+
+For this project, the first approach has been implemented. 
 
 ### Phase-3 : Dashboard Design 
+
+After the merged data table has been created and saved, the final step is to create the dashboard for the stakeholders. To build the dashboard, all the charts planned while formulating the Strategy Document in Phase-1 must be created and put together. If the merged data table was created in BigQuery during Phase-2, then directly connect to the file and start building the dashboard. For this project, a data extract has been used since there is no additional incoming data provided. However, if such were the case in a real business scenario, then it is advisable to use a live connection instead. 
+
+Based on the dashboard, an Executive Summary Document was created highlighting key insights, results and recommendations to the stakeholders. 
+
+Link to the dashboard - 
+
+
 
 
