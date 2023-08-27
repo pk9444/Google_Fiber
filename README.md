@@ -56,7 +56,7 @@ After the merged data table has been created and saved, the final step is to cre
 
 Based on the dashboard, an Executive Summary Document was created highlighting key insights, results and recommendations to the stakeholders. 
 
-Link to the dashboard - 
+Link to the dashboard - https://public.tableau.com/app/profile/pratyush2174/viz/Google_Fiber_Report/Google_Fiber_Dashboard
 
 
 
